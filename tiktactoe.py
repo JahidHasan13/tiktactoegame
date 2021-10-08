@@ -66,6 +66,25 @@ def mark_square(row, col, player):
     board[row][col] = player
 
 
+def check_win(player):
+    # vertical win check
+    for col in range(BOARD_COLS):
+        if board[0][col] == player and board[1][col] == player and board[2][col] == player:
+            draw_horizontal_winning_line()
+
+
+def draw_vertical_winning_line(col, player):
+    pass
+def draw_horizontal_winning_line(row, player):
+    pass
+def draw_asc_diagonal(player):
+    pass
+def draw_desc_diagonal(player):
+    pass
+def restart():
+
+
+
 def available_square(row, col):
     return board[row][col] == 0
 
